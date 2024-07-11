@@ -1,0 +1,31 @@
+{
+  "name": "web-component-login-page",
+  "version": "1.0.0",
+  "homepage": "https://your-username.github.io/web-component-login-page/",
+  "scripts": {
+    "start": "es-dev-server --open",
+    "build": "esbuild --bundle --minify --platform=browser --outdir=dist --entry-points=index.html",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
+  },
+  "devDependencies": {
+    "@open-wc/testing": "^1.0.0",
+    "es-dev-server": "^1.5.0",
+    "esbuild": "^0.14.12",
+    "gh-pages": "^3.2.3"
+  },
+  "dependencies": {
+    "@lion/core": "^1.0.0",
+    "@lion/input": "^1.0.0",
+    "@lion/button": "^1.0.0",
+    "@lion/checkbox-group": "^1.0.0",
+    "@lion/form": "^1.0.0",
+    "@lion/icon": "^1.0.0",
+    "@lion/listbox": "^1.0.0",
+    "@lion/loading": "^1.0.0",
+    "@lion/textarea": "^1.0.0",
+    "@lion/tooltip": "^1.0.0",
+    "@lion/validate": "^1.0.0",
+    "@lion/dialog": "^1.0.0"
+  }
+}
